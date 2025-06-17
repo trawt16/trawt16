@@ -1,10 +1,10 @@
-const fs = require('fs');
-const path = require('path');
-const { marked } = require('marked');
+const fs = require("fs");
+const path = require("path");
+const { marked } = require("marked");
 
 // 1️⃣ Read your README.md
-const mdPath = path.join(__dirname, 'README.md');
-const mdContent = fs.readFileSync(mdPath, 'utf8');
+const mdPath = path.join(__dirname, "README.md");
+const mdContent = fs.readFileSync(mdPath, "utf8");
 
 // 2️⃣ Convert Markdown → HTML
 const htmlContent = marked(mdContent);
@@ -26,7 +26,7 @@ const fullHtml = `
 </html>
 `;
 
-    // 4️⃣ Write the output to a file (you can also serve it instead)
-    fs.writeFileSync(path.join(__dirname, 'index.html'), fullHtml);
+// 4️⃣ Write the output to a file (you can also serve it instead)
+fs.writeFileSync(path.join(__dirname, "index.html"), fullHtml);
 
-    console.log('✅ README.md converted to index.html');
+console.log("✅ README.md converted to index.html");
