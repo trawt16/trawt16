@@ -1,0 +1,15 @@
+{
+  "name": "trawt16",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hey 👋, I'm Tanishk Rawat</h1> <h3 align=\"center\">A tech nerd 👓</h3>",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^15.0.12"
+  }
+}
