@@ -26,7 +26,6 @@ const fullHtml = `
 </html>
 `;
 
-// 4️⃣ Write the output to a file (you can also serve it instead)
 fs.writeFileSync(path.join(__dirname, "index.html"), fullHtml);
 
 console.log("✅ README.md converted to index.html");
